@@ -26,8 +26,4 @@ pkgs.stdenv.mkDerivation rec {
     buildPhase = ''
         qmake . DESTDIR=$out/bin && make
     '';
-#
-#    installPhase = ''
-#        make install
-#    '';
 }

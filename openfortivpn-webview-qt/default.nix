@@ -16,7 +16,7 @@ pkgs.stdenv.mkDerivation rec {
 
     buildInputs = with pkgs.qt6; [ qmake qtwebengine qtwayland ];
 
-    nativeBuildInputs = with pkgs.qt6; [ wrapQtAppsHook ];
+    nativeBuildInputs = with pkgs.qt6; [ wrapQtAppsHook qtwebengine qtwayland ];
     dontWrapQtApps = false;
 
     configurePhase = ''
